@@ -142,7 +142,7 @@ Route::get('projects/{id?}', function ($id = 0) {
 You may constrain the format of your route parameters using the `where()` method on a route instance. The `where()` method accepts the name of the parameter and a regular expression defining how the parameter should be constrained:
 
 ```php
-Route::get('user/{$name}', function ($name) {
+Route::get('user/{name}', function ($name) {
     return 'User '.$name;
 })->where('name', '[a-zA-Z]+')
 
